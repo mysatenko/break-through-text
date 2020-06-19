@@ -1,0 +1,36 @@
+body {
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+body, textarea, button {
+    font: 20px helvetica, sans-serif;
+}
+body > div {
+    display: none;
+}
+textarea {
+    resize: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    flex: 1;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 2rem;
+}
+/* [hidden] {
+    display: none !important;
+} */
+#stage1 #container1, #stage2 #container2, #stage3 #container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 90%;
+    width: 80%;
+}
+.check #checkBtn, :not(.check) > #checkArea,:not(.check) > #nextBtn{
+    display: none !important;
+} 
